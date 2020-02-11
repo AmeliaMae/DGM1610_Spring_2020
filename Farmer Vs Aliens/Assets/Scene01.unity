@@ -691,9 +691,10 @@ GameObject:
   - component: {fileID: 1561495214}
   - component: {fileID: 1561495213}
   - component: {fileID: 1561495212}
+  - component: {fileID: 1561495215}
   m_Layer: 0
   m_Name: Cylinder
-  m_TagString: Untagged
+  m_TagString: Pickup
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -706,8 +707,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1561495210}
   m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 0.044453014, z: 1}
+  m_LocalPosition: {x: 20.41, y: -9.16, z: -0}
+  m_LocalScale: {x: 1.5323, y: 0.06811535, z: 1.5323}
   m_Children: []
   m_Father: {fileID: 2032821148}
   m_RootOrder: 0
@@ -771,6 +772,21 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1561495210}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1561495215
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1561495210}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d80421fef917b064b80ec6cf43c170e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pickupName: SilverCoin
+  pickupType: Silver
+  pointsToAdd: 50
 --- !u!1 &1573194596
 GameObject:
   m_ObjectHideFlags: 0
@@ -972,6 +988,8 @@ MonoBehaviour:
   turnSpeed: 100
   verticalInput: 0
   horizontalInput: 0
+  projectilePrefab: {fileID: 2185551112065393996, guid: f35e0fa7b3c33ce4f89f9716ac1848d0,
+    type: 3}
 --- !u!54 &1699099470
 Rigidbody:
   m_ObjectHideFlags: 0
