@@ -3,9 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Pickup : MonoBehaviour
-
 {
-
     public string pickupName;
     public string pickupType;
     public int pointsToAdd;
